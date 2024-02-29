@@ -1,0 +1,45 @@
+{
+  "name": "@hexlet/nodejs-package",
+  "version": "0.0.3",
+  "description": "Node.js boilerplate package",
+  "bin": {
+    "nodejs-package": "bin/nodejs-package.js"
+  },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "sc": "node bin/nodejs-package.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-bogatiuk/shopping-cart"
+  },
+  "author": "Alexandr Bogatiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-bogatiuk/shopping-cart"
+  },
+  "type": "module",
+  "homepage": "https://github.com/alex-bogatiuk/shopping-cart",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "lodash": "^4.17.21",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.6.0",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.2",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.6.0",
+    "npm-check-updates": "^16.10.11",
+    "simple-git-hooks": "^2.8.1"
+  }
+}
